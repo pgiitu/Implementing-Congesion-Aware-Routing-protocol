@@ -1,0 +1,2445 @@
+########################################################################
+set udp_(1) [new Agent/UDP]
+$udp_(1) set class_ 2
+set null_(1) [new Agent/Null]
+$ns attach-agent $node_(1) $udp_(1)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(1)
+$ns connect $udp_(1) $null_(1)
+} else {
+$ns attach-agent $node_(17) $null_(1)
+$ns connect $udp_(1) $null_(1)
+}
+set cbr_(1) [new Application/Traffic/CBR]
+$cbr_(1) set packetSize_ 512
+$cbr_(1) set interval_ 2.0
+$cbr_(1) attach-agent $udp_(1)
+$ns at 10.0 "$cbr_(1) start"
+
+#######################################################################
+########################################################################
+set udp_(2) [new Agent/UDP]
+$udp_(2) set class_ 2
+set null_(2) [new Agent/Null]
+$ns attach-agent $node_(2) $udp_(2)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(2)
+$ns connect $udp_(2) $null_(2)
+} else {
+$ns attach-agent $node_(17) $null_(2)
+$ns connect $udp_(2) $null_(2)
+}
+set cbr_(2) [new Application/Traffic/CBR]
+$cbr_(2) set packetSize_ 512
+$cbr_(2) set interval_ 2.0
+$cbr_(2) attach-agent $udp_(2)
+$ns at 10.0 "$cbr_(2) start"
+
+#######################################################################
+########################################################################
+set udp_(3) [new Agent/UDP]
+$udp_(3) set class_ 2
+set null_(3) [new Agent/Null]
+$ns attach-agent $node_(3) $udp_(3)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(3)
+$ns connect $udp_(3) $null_(3)
+} else {
+$ns attach-agent $node_(17) $null_(3)
+$ns connect $udp_(3) $null_(3)
+}
+set cbr_(3) [new Application/Traffic/CBR]
+$cbr_(3) set packetSize_ 512
+$cbr_(3) set interval_ 2.0
+$cbr_(3) attach-agent $udp_(3)
+$ns at 10.0 "$cbr_(3) start"
+
+#######################################################################
+########################################################################
+set udp_(4) [new Agent/UDP]
+$udp_(4) set class_ 2
+set null_(4) [new Agent/Null]
+$ns attach-agent $node_(4) $udp_(4)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(4)
+$ns connect $udp_(4) $null_(4)
+} else {
+$ns attach-agent $node_(17) $null_(4)
+$ns connect $udp_(4) $null_(4)
+}
+set cbr_(4) [new Application/Traffic/CBR]
+$cbr_(4) set packetSize_ 512
+$cbr_(4) set interval_ 2.0
+$cbr_(4) attach-agent $udp_(4)
+$ns at 10.0 "$cbr_(4) start"
+
+#######################################################################
+########################################################################
+set udp_(5) [new Agent/UDP]
+$udp_(5) set class_ 2
+set null_(5) [new Agent/Null]
+$ns attach-agent $node_(5) $udp_(5)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(5)
+$ns connect $udp_(5) $null_(5)
+} else {
+$ns attach-agent $node_(17) $null_(5)
+$ns connect $udp_(5) $null_(5)
+}
+set cbr_(5) [new Application/Traffic/CBR]
+$cbr_(5) set packetSize_ 512
+$cbr_(5) set interval_ 2.0
+$cbr_(5) attach-agent $udp_(5)
+$ns at 10.0 "$cbr_(5) start"
+
+#######################################################################
+########################################################################
+set udp_(6) [new Agent/UDP]
+$udp_(6) set class_ 2
+set null_(6) [new Agent/Null]
+$ns attach-agent $node_(6) $udp_(6)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(6)
+$ns connect $udp_(6) $null_(6)
+} else {
+$ns attach-agent $node_(17) $null_(6)
+$ns connect $udp_(6) $null_(6)
+}
+set cbr_(6) [new Application/Traffic/CBR]
+$cbr_(6) set packetSize_ 512
+$cbr_(6) set interval_ 2.0
+$cbr_(6) attach-agent $udp_(6)
+$ns at 10.0 "$cbr_(6) start"
+
+#######################################################################
+########################################################################
+set udp_(7) [new Agent/UDP]
+$udp_(7) set class_ 2
+set null_(7) [new Agent/Null]
+$ns attach-agent $node_(7) $udp_(7)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(7)
+$ns connect $udp_(7) $null_(7)
+} else {
+$ns attach-agent $node_(17) $null_(7)
+$ns connect $udp_(7) $null_(7)
+}
+set cbr_(7) [new Application/Traffic/CBR]
+$cbr_(7) set packetSize_ 512
+$cbr_(7) set interval_ 2.0
+$cbr_(7) attach-agent $udp_(7)
+$ns at 10.0 "$cbr_(7) start"
+
+#######################################################################
+########################################################################
+set udp_(8) [new Agent/UDP]
+$udp_(8) set class_ 2
+set null_(8) [new Agent/Null]
+$ns attach-agent $node_(8) $udp_(8)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(8)
+$ns connect $udp_(8) $null_(8)
+} else {
+$ns attach-agent $node_(17) $null_(8)
+$ns connect $udp_(8) $null_(8)
+}
+set cbr_(8) [new Application/Traffic/CBR]
+$cbr_(8) set packetSize_ 512
+$cbr_(8) set interval_ 2.0
+$cbr_(8) attach-agent $udp_(8)
+$ns at 10.0 "$cbr_(8) start"
+
+########################################################################
+#######################################################################
+set udp_(9) [new Agent/UDP]
+$udp_(9) set class_ 2
+set null_(9) [new Agent/Null]
+$ns attach-agent $node_(9) $udp_(9)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(9)
+$ns connect $udp_(9) $null_(9)
+} else {
+$ns attach-agent $node_(17) $null_(9)
+$ns connect $udp_(9) $null_(9)
+}
+set cbr_(9) [new Application/Traffic/CBR]
+$cbr_(9) set packetSize_ 512
+$cbr_(9) set interval_ 2.0
+$cbr_(9) attach-agent $udp_(9)
+$ns at 10.0 "$cbr_(9) start"
+
+#######################################################################
+########################################################################
+set udp_(10) [new Agent/UDP]
+$udp_(10) set class_ 2
+set null_(10) [new Agent/Null]
+$ns attach-agent $node_(10) $udp_(10)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(10)
+$ns connect $udp_(10) $null_(10)
+} else {
+$ns attach-agent $node_(17) $null_(10)
+$ns connect $udp_(10) $null_(10)
+}
+set cbr_(10) [new Application/Traffic/CBR]
+$cbr_(10) set packetSize_ 512
+$cbr_(10) set interval_ 2.0
+$cbr_(10) attach-agent $udp_(10)
+$ns at 10.0 "$cbr_(10) start"
+
+#######################################################################
+########################################################################
+set udp_(11) [new Agent/UDP]
+$udp_(11) set class_ 2
+set null_(11) [new Agent/Null]
+$ns attach-agent $node_(11) $udp_(11)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(11)
+$ns connect $udp_(11) $null_(11)
+} else {
+$ns attach-agent $node_(17) $null_(11)
+$ns connect $udp_(11) $null_(11)
+}
+set cbr_(11) [new Application/Traffic/CBR]
+$cbr_(11) set packetSize_ 512
+$cbr_(11) set interval_ 2.0
+$cbr_(11) attach-agent $udp_(11)
+$ns at 10.0 "$cbr_(11) start"
+
+#######################################################################
+########################################################################
+set udp_(12) [new Agent/UDP]
+$udp_(12) set class_ 2
+set null_(12) [new Agent/Null]
+$ns attach-agent $node_(12) $udp_(12)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(12)
+$ns connect $udp_(12) $null_(12)
+} else {
+$ns attach-agent $node_(17) $null_(12)
+$ns connect $udp_(12) $null_(12)
+}
+set cbr_(12) [new Application/Traffic/CBR]
+$cbr_(12) set packetSize_ 512
+$cbr_(12) set interval_ 2.0
+$cbr_(12) attach-agent $udp_(12)
+$ns at 10.0 "$cbr_(12) start"
+
+#######################################################################
+########################################################################
+set udp_(13) [new Agent/UDP]
+$udp_(13) set class_ 2
+set null_(13) [new Agent/Null]
+$ns attach-agent $node_(13) $udp_(13)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(13)
+$ns connect $udp_(13) $null_(13)
+} else {
+$ns attach-agent $node_(17) $null_(13)
+$ns connect $udp_(13) $null_(13)
+}
+set cbr_(13) [new Application/Traffic/CBR]
+$cbr_(13) set packetSize_ 512
+$cbr_(13) set interval_ 2.0
+$cbr_(13) attach-agent $udp_(13)
+$ns at 10.0 "$cbr_(13) start"
+
+#######################################################################
+########################################################################
+set udp_(14) [new Agent/UDP]
+$udp_(14) set class_ 2
+set null_(14) [new Agent/Null]
+$ns attach-agent $node_(14) $udp_(14)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(14)
+$ns connect $udp_(14) $null_(14)
+} else {
+$ns attach-agent $node_(17) $null_(14)
+$ns connect $udp_(14) $null_(14)
+}
+set cbr_(14) [new Application/Traffic/CBR]
+$cbr_(14) set packetSize_ 512
+$cbr_(14) set interval_ 2.0
+$cbr_(14) attach-agent $udp_(14)
+$ns at 10.0 "$cbr_(14) start"
+
+#######################################################################
+########################################################################
+set udp_(15) [new Agent/UDP]
+$udp_(15) set class_ 2
+set null_(15) [new Agent/Null]
+$ns attach-agent $node_(15) $udp_(15)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(15)
+$ns connect $udp_(15) $null_(15)
+} else {
+$ns attach-agent $node_(17) $null_(15)
+$ns connect $udp_(15) $null_(15)
+}
+set cbr_(15) [new Application/Traffic/CBR]
+$cbr_(15) set packetSize_ 512
+$cbr_(15) set interval_ 2.0
+$cbr_(15) attach-agent $udp_(15)
+$ns at 10.0 "$cbr_(15) start"
+
+#######################################################################
+########################################################################
+set udp_(16) [new Agent/UDP]
+$udp_(16) set class_ 2
+set null_(16) [new Agent/Null]
+$ns attach-agent $node_(16) $udp_(16)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(16)
+$ns connect $udp_(16) $null_(16)
+} else {
+$ns attach-agent $node_(17) $null_(16)
+$ns connect $udp_(16) $null_(16)
+}
+set cbr_(16) [new Application/Traffic/CBR]
+$cbr_(16) set packetSize_ 512
+$cbr_(16) set interval_ 2.0
+$cbr_(16) attach-agent $udp_(16)
+$ns at 10.0 "$cbr_(16) start"
+
+#######################################################################
+########################################################################
+set udp_(18) [new Agent/UDP]
+$udp_(18) set class_ 2
+set null_(18) [new Agent/Null]
+$ns attach-agent $node_(18) $udp_(18)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(18)
+$ns connect $udp_(18) $null_(18)
+} else {
+$ns attach-agent $node_(17) $null_(18)
+$ns connect $udp_(18) $null_(18)
+}
+set cbr_(18) [new Application/Traffic/CBR]
+$cbr_(18) set packetSize_ 512
+$cbr_(18) set interval_ 2.0
+$cbr_(18) attach-agent $udp_(18)
+$ns at 10.0 "$cbr_(18) start"
+
+#######################################################################
+########################################################################
+set udp_(19) [new Agent/UDP]
+$udp_(19) set class_ 2
+set null_(19) [new Agent/Null]
+$ns attach-agent $node_(19) $udp_(19)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(19)
+$ns connect $udp_(19) $null_(19)
+} else {
+$ns attach-agent $node_(17) $null_(19)
+$ns connect $udp_(19) $null_(19)
+}
+set cbr_(19) [new Application/Traffic/CBR]
+$cbr_(19) set packetSize_ 512
+$cbr_(19) set interval_ 2.0
+$cbr_(19) attach-agent $udp_(19)
+$ns at 10.0 "$cbr_(19) start"
+
+#######################################################################
+########################################################################
+set udp_(20) [new Agent/UDP]
+$udp_(20) set class_ 2
+set null_(20) [new Agent/Null]
+$ns attach-agent $node_(20) $udp_(20)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(20)
+$ns connect $udp_(20) $null_(20)
+} else {
+$ns attach-agent $node_(17) $null_(20)
+$ns connect $udp_(20) $null_(20)
+}
+set cbr_(20) [new Application/Traffic/CBR]
+$cbr_(20) set packetSize_ 512
+$cbr_(20) set interval_ 2.0
+$cbr_(20) attach-agent $udp_(20)
+$ns at 10.0 "$cbr_(20) start"
+
+#######################################################################
+########################################################################
+set udp_(21) [new Agent/UDP]
+$udp_(21) set class_ 2
+set null_(21) [new Agent/Null]
+$ns attach-agent $node_(21) $udp_(21)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(21)
+$ns connect $udp_(21) $null_(21)
+} else {
+$ns attach-agent $node_(17) $null_(21)
+$ns connect $udp_(21) $null_(21)
+}
+set cbr_(21) [new Application/Traffic/CBR]
+$cbr_(21) set packetSize_ 512
+$cbr_(21) set interval_ 2.0
+$cbr_(21) attach-agent $udp_(21)
+$ns at 10.0 "$cbr_(21) start"
+
+#######################################################################
+########################################################################
+set udp_(22) [new Agent/UDP]
+$udp_(22) set class_ 2
+set null_(22) [new Agent/Null]
+$ns attach-agent $node_(22) $udp_(22)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(22)
+$ns connect $udp_(22) $null_(22)
+} else {
+$ns attach-agent $node_(17) $null_(22)
+$ns connect $udp_(22) $null_(22)
+}
+set cbr_(22) [new Application/Traffic/CBR]
+$cbr_(22) set packetSize_ 512
+$cbr_(22) set interval_ 2.0
+$cbr_(22) attach-agent $udp_(22)
+$ns at 10.0 "$cbr_(22) start"
+
+#######################################################################
+########################################################################
+set udp_(23) [new Agent/UDP]
+$udp_(23) set class_ 2
+set null_(23) [new Agent/Null]
+$ns attach-agent $node_(23) $udp_(23)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(23)
+$ns connect $udp_(23) $null_(23)
+} else {
+$ns attach-agent $node_(17) $null_(23)
+$ns connect $udp_(23) $null_(23)
+}
+set cbr_(23) [new Application/Traffic/CBR]
+$cbr_(23) set packetSize_ 512
+$cbr_(23) set interval_ 2.0
+$cbr_(23) attach-agent $udp_(23)
+$ns at 10.0 "$cbr_(23) start"
+
+#######################################################################
+########################################################################
+set udp_(24) [new Agent/UDP]
+$udp_(24) set class_ 2
+set null_(24) [new Agent/Null]
+$ns attach-agent $node_(24) $udp_(24)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(24)
+$ns connect $udp_(24) $null_(24)
+} else {
+$ns attach-agent $node_(17) $null_(24)
+$ns connect $udp_(24) $null_(24)
+}
+set cbr_(24) [new Application/Traffic/CBR]
+$cbr_(24) set packetSize_ 512
+$cbr_(24) set interval_ 2.0
+$cbr_(24) attach-agent $udp_(24)
+$ns at 10.0 "$cbr_(24) start"
+
+#######################################################################
+########################################################################
+set udp_(25) [new Agent/UDP]
+$udp_(25) set class_ 2
+set null_(25) [new Agent/Null]
+$ns attach-agent $node_(25) $udp_(25)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(25)
+$ns connect $udp_(25) $null_(25)
+} else {
+$ns attach-agent $node_(17) $null_(25)
+$ns connect $udp_(25) $null_(25)
+}
+set cbr_(25) [new Application/Traffic/CBR]
+$cbr_(25) set packetSize_ 512
+$cbr_(25) set interval_ 2.0
+$cbr_(25) attach-agent $udp_(25)
+$ns at 10.0 "$cbr_(25) start"
+
+#######################################################################
+########################################################################
+set udp_(26) [new Agent/UDP]
+$udp_(26) set class_ 2
+set null_(26) [new Agent/Null]
+$ns attach-agent $node_(26) $udp_(26)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(26)
+$ns connect $udp_(26) $null_(26)
+} else {
+$ns attach-agent $node_(17) $null_(26)
+$ns connect $udp_(26) $null_(26)
+}
+set cbr_(26) [new Application/Traffic/CBR]
+$cbr_(26) set packetSize_ 512
+$cbr_(26) set interval_ 2.0
+$cbr_(26) attach-agent $udp_(26)
+$ns at 10.0 "$cbr_(26) start"
+
+#######################################################################
+########################################################################
+set udp_(27) [new Agent/UDP]
+$udp_(27) set class_ 2
+set null_(27) [new Agent/Null]
+$ns attach-agent $node_(27) $udp_(27)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(27)
+$ns connect $udp_(27) $null_(27)
+} else {
+$ns attach-agent $node_(17) $null_(27)
+$ns connect $udp_(27) $null_(27)
+}
+set cbr_(27) [new Application/Traffic/CBR]
+$cbr_(27) set packetSize_ 512
+$cbr_(27) set interval_ 2.0
+$cbr_(27) attach-agent $udp_(27)
+$ns at 10.0 "$cbr_(27) start"
+
+#######################################################################
+########################################################################
+set udp_(28) [new Agent/UDP]
+$udp_(28) set class_ 2
+set null_(28) [new Agent/Null]
+$ns attach-agent $node_(28) $udp_(28)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(28)
+$ns connect $udp_(28) $null_(28)
+} else {
+$ns attach-agent $node_(17) $null_(28)
+$ns connect $udp_(28) $null_(28)
+}
+set cbr_(28) [new Application/Traffic/CBR]
+$cbr_(28) set packetSize_ 512
+$cbr_(28) set interval_ 2.0
+$cbr_(28) attach-agent $udp_(28)
+$ns at 10.0 "$cbr_(28) start"
+
+#######################################################################
+########################################################################
+set udp_(29) [new Agent/UDP]
+$udp_(29) set class_ 2
+set null_(29) [new Agent/Null]
+$ns attach-agent $node_(29) $udp_(29)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(29)
+$ns connect $udp_(29) $null_(29)
+} else {
+$ns attach-agent $node_(17) $null_(29)
+$ns connect $udp_(29) $null_(29)
+}
+set cbr_(29) [new Application/Traffic/CBR]
+$cbr_(29) set packetSize_ 512
+$cbr_(29) set interval_ 2.0
+$cbr_(29) attach-agent $udp_(29)
+$ns at 10.0 "$cbr_(29) start"
+
+#######################################################################
+########################################################################
+set udp_(30) [new Agent/UDP]
+$udp_(30) set class_ 2
+set null_(30) [new Agent/Null]
+$ns attach-agent $node_(30) $udp_(30)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(30)
+$ns connect $udp_(30) $null_(30)
+} else {
+$ns attach-agent $node_(17) $null_(30)
+$ns connect $udp_(30) $null_(30)
+}
+set cbr_(30) [new Application/Traffic/CBR]
+$cbr_(30) set packetSize_ 512
+$cbr_(30) set interval_ 2.0
+$cbr_(30) attach-agent $udp_(30)
+$ns at 10.0 "$cbr_(30) start"
+
+#######################################################################
+########################################################################
+set udp_(31) [new Agent/UDP]
+$udp_(31) set class_ 2
+set null_(31) [new Agent/Null]
+$ns attach-agent $node_(31) $udp_(31)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(31)
+$ns connect $udp_(31) $null_(31)
+} else {
+$ns attach-agent $node_(17) $null_(31)
+$ns connect $udp_(31) $null_(31)
+}
+set cbr_(31) [new Application/Traffic/CBR]
+$cbr_(31) set packetSize_ 512
+$cbr_(31) set interval_ 2.0
+$cbr_(31) attach-agent $udp_(31)
+$ns at 10.0 "$cbr_(31) start"
+
+
+########################################################################
+set udp_(32) [new Agent/UDP]
+$udp_(32) set class_ 2
+set null_(32) [new Agent/Null]
+$ns attach-agent $node_(32) $udp_(32)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(32)
+$ns connect $udp_(32) $null_(32)
+} else {
+$ns attach-agent $node_(17) $null_(32)
+$ns connect $udp_(32) $null_(32)
+}
+set cbr_(32) [new Application/Traffic/CBR]
+$cbr_(32) set packetSize_ 512
+$cbr_(32) set interval_ 2.0
+$cbr_(32) attach-agent $udp_(32)
+$ns at 10.0 "$cbr_(32) start"
+
+#######################################################################
+########################################################################
+set udp_(33) [new Agent/UDP]
+$udp_(33) set class_ 2
+set null_(33) [new Agent/Null]
+$ns attach-agent $node_(33) $udp_(33)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(33)
+$ns connect $udp_(33) $null_(33)
+} else {
+$ns attach-agent $node_(17) $null_(33)
+$ns connect $udp_(33) $null_(33)
+}
+set cbr_(33) [new Application/Traffic/CBR]
+$cbr_(33) set packetSize_ 512
+$cbr_(33) set interval_ 2.0
+$cbr_(33) attach-agent $udp_(33)
+$ns at 10.0 "$cbr_(33) start"
+
+#######################################################################
+########################################################################
+set udp_(34) [new Agent/UDP]
+$udp_(34) set class_ 2
+set null_(34) [new Agent/Null]
+$ns attach-agent $node_(34) $udp_(34)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(34)
+$ns connect $udp_(34) $null_(34)
+} else {
+$ns attach-agent $node_(17) $null_(34)
+$ns connect $udp_(34) $null_(34)
+}
+set cbr_(34) [new Application/Traffic/CBR]
+$cbr_(34) set packetSize_ 512
+$cbr_(34) set interval_ 2.0
+$cbr_(34) attach-agent $udp_(34)
+$ns at 10.0 "$cbr_(34) start"
+
+###############################################################################################################################################
+set udp_(35) [new Agent/UDP]
+$udp_(35) set class_ 2
+set null_(35) [new Agent/Null]
+$ns attach-agent $node_(35) $udp_(35)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(35)
+$ns connect $udp_(35) $null_(35)
+} else {
+$ns attach-agent $node_(17) $null_(35)
+$ns connect $udp_(35) $null_(35)
+}
+set cbr_(35) [new Application/Traffic/CBR]
+$cbr_(35) set packetSize_ 512
+$cbr_(35) set interval_ 2.0
+$cbr_(35) attach-agent $udp_(35)
+$ns at 10.0 "$cbr_(35) start"
+
+#######################################################################
+########################################################################
+set udp_(36) [new Agent/UDP]
+$udp_(36) set class_ 2
+set null_(36) [new Agent/Null]
+$ns attach-agent $node_(36) $udp_(36)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(36)
+$ns connect $udp_(36) $null_(36)
+} else {
+$ns attach-agent $node_(17) $null_(36)
+$ns connect $udp_(36) $null_(36)
+}
+set cbr_(36) [new Application/Traffic/CBR]
+$cbr_(36) set packetSize_ 512
+$cbr_(36) set interval_ 2.0
+$cbr_(36) attach-agent $udp_(36)
+$ns at 10.0 "$cbr_(36) start"
+
+#######################################################################
+########################################################################
+set udp_(37) [new Agent/UDP]
+$udp_(37) set class_ 2
+set null_(37) [new Agent/Null]
+$ns attach-agent $node_(37) $udp_(37)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(37)
+$ns connect $udp_(37) $null_(37)
+} else {
+$ns attach-agent $node_(17) $null_(37)
+$ns connect $udp_(37) $null_(37)
+}
+set cbr_(37) [new Application/Traffic/CBR]
+$cbr_(37) set packetSize_ 512
+$cbr_(37) set interval_ 2.0
+$cbr_(37) attach-agent $udp_(37)
+$ns at 10.0 "$cbr_(37) start"
+
+#######################################################################
+########################################################################
+set udp_(38) [new Agent/UDP]
+$udp_(38) set class_ 2
+set null_(38) [new Agent/Null]
+$ns attach-agent $node_(38) $udp_(38)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(38)
+$ns connect $udp_(38) $null_(38)
+} else {
+$ns attach-agent $node_(17) $null_(38)
+$ns connect $udp_(38) $null_(38)
+}
+set cbr_(38) [new Application/Traffic/CBR]
+$cbr_(38) set packetSize_ 512
+$cbr_(38) set interval_ 2.0
+$cbr_(38) attach-agent $udp_(38)
+$ns at 10.0 "$cbr_(38) start"
+
+#######################################################################
+########################################################################
+set udp_(39) [new Agent/UDP]
+$udp_(39) set class_ 2
+set null_(39) [new Agent/Null]
+$ns attach-agent $node_(39) $udp_(39)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(39)
+$ns connect $udp_(39) $null_(39)
+} else {
+$ns attach-agent $node_(17) $null_(39)
+$ns connect $udp_(39) $null_(39)
+}
+set cbr_(39) [new Application/Traffic/CBR]
+$cbr_(39) set packetSize_ 512
+$cbr_(39) set interval_ 2.0
+$cbr_(39) attach-agent $udp_(39)
+$ns at 10.0 "$cbr_(39) start"
+
+########################################################################
+set udp_(40) [new Agent/UDP]
+$udp_(40) set class_ 2
+set null_(40) [new Agent/Null]
+$ns attach-agent $node_(40) $udp_(40)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(40)
+$ns connect $udp_(40) $null_(40)
+} else {
+$ns attach-agent $node_(17) $null_(40)
+$ns connect $udp_(40) $null_(40)
+}
+set cbr_(40) [new Application/Traffic/CBR]
+$cbr_(40) set packetSize_ 512
+$cbr_(40) set interval_ 2.0
+$cbr_(40) attach-agent $udp_(40)
+$ns at 10.0 "$cbr_(40) start"
+
+#######################################################################
+########################################################################
+set udp_(41) [new Agent/UDP]
+$udp_(41) set class_ 2
+set null_(41) [new Agent/Null]
+$ns attach-agent $node_(41) $udp_(41)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(41)
+$ns connect $udp_(41) $null_(41)
+} else {
+$ns attach-agent $node_(17) $null_(41)
+$ns connect $udp_(41) $null_(41)
+}
+set cbr_(41) [new Application/Traffic/CBR]
+$cbr_(41) set packetSize_ 512
+$cbr_(41) set interval_ 2.0
+$cbr_(41) attach-agent $udp_(41)
+$ns at 10.0 "$cbr_(41) start"
+
+#######################################################################
+########################################################################
+set udp_(42) [new Agent/UDP]
+$udp_(42) set class_ 2
+set null_(42) [new Agent/Null]
+$ns attach-agent $node_(42) $udp_(42)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(42)
+$ns connect $udp_(42) $null_(42)
+} else {
+$ns attach-agent $node_(17) $null_(42)
+$ns connect $udp_(42) $null_(42)
+}
+set cbr_(42) [new Application/Traffic/CBR]
+$cbr_(42) set packetSize_ 512
+$cbr_(42) set interval_ 2.0
+$cbr_(42) attach-agent $udp_(42)
+$ns at 10.0 "$cbr_(42) start"
+
+#######################################################################
+########################################################################
+set udp_(43) [new Agent/UDP]
+$udp_(43) set class_ 2
+set null_(43) [new Agent/Null]
+$ns attach-agent $node_(43) $udp_(43)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(43)
+$ns connect $udp_(43) $null_(43)
+} else {
+$ns attach-agent $node_(17) $null_(43)
+$ns connect $udp_(43) $null_(43)
+}
+set cbr_(43) [new Application/Traffic/CBR]
+$cbr_(43) set packetSize_ 512
+$cbr_(43) set interval_ 2.0
+$cbr_(43) attach-agent $udp_(43)
+$ns at 10.0 "$cbr_(43) start"
+
+#######################################################################
+########################################################################
+set udp_(44) [new Agent/UDP]
+$udp_(44) set class_ 2
+set null_(44) [new Agent/Null]
+$ns attach-agent $node_(44) $udp_(44)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(44)
+$ns connect $udp_(44) $null_(44)
+} else {
+$ns attach-agent $node_(17) $null_(44)
+$ns connect $udp_(44) $null_(44)
+}
+set cbr_(44) [new Application/Traffic/CBR]
+$cbr_(44) set packetSize_ 512
+$cbr_(44) set interval_ 2.0
+$cbr_(44) attach-agent $udp_(44)
+$ns at 10.0 "$cbr_(44) start"
+
+#######################################################################
+########################################################################
+set udp_(45) [new Agent/UDP]
+$udp_(45) set class_ 2
+set null_(45) [new Agent/Null]
+$ns attach-agent $node_(45) $udp_(45)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(45)
+$ns connect $udp_(45) $null_(45)
+} else {
+$ns attach-agent $node_(17) $null_(45)
+$ns connect $udp_(45) $null_(45)
+}
+set cbr_(45) [new Application/Traffic/CBR]
+$cbr_(45) set packetSize_ 512
+$cbr_(45) set interval_ 2.0
+$cbr_(45) attach-agent $udp_(45)
+$ns at 10.0 "$cbr_(45) start"
+
+#######################################################################
+########################################################################
+set udp_(46) [new Agent/UDP]
+$udp_(46) set class_ 2
+set null_(46) [new Agent/Null]
+$ns attach-agent $node_(46) $udp_(46)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(46)
+$ns connect $udp_(46) $null_(46)
+} else {
+$ns attach-agent $node_(17) $null_(46)
+$ns connect $udp_(46) $null_(46)
+}
+set cbr_(46) [new Application/Traffic/CBR]
+$cbr_(46) set packetSize_ 512
+$cbr_(46) set interval_ 2.0
+$cbr_(46) attach-agent $udp_(46)
+$ns at 10.0 "$cbr_(46) start"
+
+#######################################################################
+########################################################################
+set udp_(47) [new Agent/UDP]
+$udp_(47) set class_ 2
+set null_(47) [new Agent/Null]
+$ns attach-agent $node_(47) $udp_(47)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(47)
+$ns connect $udp_(47) $null_(47)
+} else {
+$ns attach-agent $node_(17) $null_(47)
+$ns connect $udp_(47) $null_(47)
+}
+set cbr_(47) [new Application/Traffic/CBR]
+$cbr_(47) set packetSize_ 512
+$cbr_(47) set interval_ 2.0
+$cbr_(47) attach-agent $udp_(47)
+$ns at 10.0 "$cbr_(47) start"
+
+#######################################################################
+########################################################################
+set udp_(48) [new Agent/UDP]
+$udp_(48) set class_ 2
+set null_(48) [new Agent/Null]
+$ns attach-agent $node_(48) $udp_(48)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(48)
+$ns connect $udp_(48) $null_(48)
+} else {
+$ns attach-agent $node_(17) $null_(48)
+$ns connect $udp_(48) $null_(48)
+}
+set cbr_(48) [new Application/Traffic/CBR]
+$cbr_(48) set packetSize_ 512
+$cbr_(48) set interval_ 2.0
+$cbr_(48) attach-agent $udp_(48)
+$ns at 10.0 "$cbr_(48) start"
+
+#######################################################################
+########################################################################
+set udp_(49) [new Agent/UDP]
+$udp_(49) set class_ 2
+set null_(49) [new Agent/Null]
+$ns attach-agent $node_(49) $udp_(49)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(49)
+$ns connect $udp_(49) $null_(49)
+} else {
+$ns attach-agent $node_(17) $null_(49)
+$ns connect $udp_(49) $null_(49)
+}
+set cbr_(49) [new Application/Traffic/CBR]
+$cbr_(49) set packetSize_ 512
+$cbr_(49) set interval_ 2.0
+$cbr_(49) attach-agent $udp_(49)
+$ns at 10.0 "$cbr_(49) start"
+
+#######################################################################
+########################################################################
+set udp_(50) [new Agent/UDP]
+$udp_(50) set class_ 2
+set null_(50) [new Agent/Null]
+$ns attach-agent $node_(50) $udp_(50)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(50)
+$ns connect $udp_(50) $null_(50)
+} else {
+$ns attach-agent $node_(17) $null_(50)
+$ns connect $udp_(50) $null_(50)
+}
+set cbr_(50) [new Application/Traffic/CBR]
+$cbr_(50) set packetSize_ 512
+$cbr_(50) set interval_ 2.0
+$cbr_(50) attach-agent $udp_(50)
+$ns at 10.0 "$cbr_(50) start"
+
+#######################################################################
+########################################################################
+set udp_(51) [new Agent/UDP]
+$udp_(51) set class_ 2
+set null_(51) [new Agent/Null]
+$ns attach-agent $node_(51) $udp_(51)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(51)
+$ns connect $udp_(51) $null_(51)
+} else {
+$ns attach-agent $node_(17) $null_(51)
+$ns connect $udp_(51) $null_(51)
+}
+set cbr_(51) [new Application/Traffic/CBR]
+$cbr_(51) set packetSize_ 512
+$cbr_(51) set interval_ 2.0
+$cbr_(51) attach-agent $udp_(51)
+$ns at 10.0 "$cbr_(51) start"
+
+#######################################################################
+########################################################################
+set udp_(52) [new Agent/UDP]
+$udp_(52) set class_ 2
+set null_(52) [new Agent/Null]
+$ns attach-agent $node_(52) $udp_(52)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(52)
+$ns connect $udp_(52) $null_(52)
+} else {
+$ns attach-agent $node_(17) $null_(52)
+$ns connect $udp_(52) $null_(52)
+}
+set cbr_(52) [new Application/Traffic/CBR]
+$cbr_(52) set packetSize_ 512
+$cbr_(52) set interval_ 2.0
+$cbr_(52) attach-agent $udp_(52)
+$ns at 10.0 "$cbr_(52) start"
+
+#######################################################################
+########################################################################
+set udp_(53) [new Agent/UDP]
+$udp_(53) set class_ 2
+set null_(53) [new Agent/Null]
+$ns attach-agent $node_(53) $udp_(53)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(53)
+$ns connect $udp_(53) $null_(53)
+} else {
+$ns attach-agent $node_(17) $null_(53)
+$ns connect $udp_(53) $null_(53)
+}
+set cbr_(53) [new Application/Traffic/CBR]
+$cbr_(53) set packetSize_ 512
+$cbr_(53) set interval_ 2.0
+$cbr_(53) attach-agent $udp_(53)
+$ns at 10.0 "$cbr_(53) start"
+
+#######################################################################
+########################################################################
+set udp_(54) [new Agent/UDP]
+$udp_(54) set class_ 2
+set null_(54) [new Agent/Null]
+$ns attach-agent $node_(54) $udp_(54)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(54)
+$ns connect $udp_(54) $null_(54)
+} else {
+$ns attach-agent $node_(17) $null_(54)
+$ns connect $udp_(54) $null_(54)
+}
+set cbr_(54) [new Application/Traffic/CBR]
+$cbr_(54) set packetSize_ 512
+$cbr_(54) set interval_ 2.0
+$cbr_(54) attach-agent $udp_(54)
+$ns at 10.0 "$cbr_(54) start"
+
+#######################################################################
+########################################################################
+set udp_(55) [new Agent/UDP]
+$udp_(55) set class_ 2
+set null_(55) [new Agent/Null]
+$ns attach-agent $node_(55) $udp_(55)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(55)
+$ns connect $udp_(55) $null_(55)
+} else {
+$ns attach-agent $node_(17) $null_(55)
+$ns connect $udp_(55) $null_(55)
+}
+set cbr_(55) [new Application/Traffic/CBR]
+$cbr_(55) set packetSize_ 512
+$cbr_(55) set interval_ 2.0
+$cbr_(55) attach-agent $udp_(55)
+$ns at 10.0 "$cbr_(55) start"
+
+#######################################################################
+########################################################################
+set udp_(56) [new Agent/UDP]
+$udp_(56) set class_ 2
+set null_(56) [new Agent/Null]
+$ns attach-agent $node_(56) $udp_(56)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(56)
+$ns connect $udp_(56) $null_(56)
+} else {
+$ns attach-agent $node_(17) $null_(56)
+$ns connect $udp_(56) $null_(56)
+}
+set cbr_(56) [new Application/Traffic/CBR]
+$cbr_(56) set packetSize_ 512
+$cbr_(56) set interval_ 2.0
+$cbr_(56) attach-agent $udp_(56)
+$ns at 10.0 "$cbr_(56) start"
+
+#######################################################################
+########################################################################
+set udp_(57) [new Agent/UDP]
+$udp_(57) set class_ 2
+set null_(57) [new Agent/Null]
+$ns attach-agent $node_(57) $udp_(57)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(57)
+$ns connect $udp_(57) $null_(57)
+} else {
+$ns attach-agent $node_(17) $null_(57)
+$ns connect $udp_(57) $null_(57)
+}
+set cbr_(57) [new Application/Traffic/CBR]
+$cbr_(57) set packetSize_ 512
+$cbr_(57) set interval_ 2.0
+$cbr_(57) attach-agent $udp_(57)
+$ns at 10.0 "$cbr_(57) start"
+
+#######################################################################
+########################################################################
+set udp_(58) [new Agent/UDP]
+$udp_(58) set class_ 2
+set null_(58) [new Agent/Null]
+$ns attach-agent $node_(58) $udp_(58)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(58)
+$ns connect $udp_(58) $null_(58)
+} else {
+$ns attach-agent $node_(17) $null_(58)
+$ns connect $udp_(58) $null_(58)
+}
+set cbr_(58) [new Application/Traffic/CBR]
+$cbr_(58) set packetSize_ 512
+$cbr_(58) set interval_ 2.0
+$cbr_(58) attach-agent $udp_(58)
+$ns at 10.0 "$cbr_(58) start"
+
+#######################################################################
+########################################################################
+set udp_(59) [new Agent/UDP]
+$udp_(59) set class_ 2
+set null_(59) [new Agent/Null]
+$ns attach-agent $node_(59) $udp_(59)
+$ns attach-agent $node_(62) $null_(59)
+$ns connect $udp_(59) $null_(59)
+set cbr_(59) [new Application/Traffic/CBR]
+$cbr_(59) set packetSize_ 512
+$cbr_(59) attach-agent $udp_(59)
+
+$cbr_(59) set interval_ 10			## setting the packet rate for high priority packet
+$ns at 6.0 "$cbr_(59) start"
+
+
+$cbr_(59) set interval_ 0.033			## setting the packet rate for high priority packet
+$ns at 10.0 "$cbr_(59) start"
+
+#######################################################################
+########################################################################
+set udp_(60) [new Agent/UDP]
+$udp_(60) set class_ 2
+set null_(60) [new Agent/Null]
+$ns attach-agent $node_(60) $udp_(60)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(60)
+$ns connect $udp_(60) $null_(60)
+} else {
+$ns attach-agent $node_(17) $null_(60)
+$ns connect $udp_(60) $null_(60)
+}
+set cbr_(60) [new Application/Traffic/CBR]
+$cbr_(60) set packetSize_ 512
+$cbr_(60) set interval_ 2.0
+$cbr_(60) attach-agent $udp_(60)
+$ns at 10.0 "$cbr_(60) start"
+
+#######################################################################
+########################################################################
+set udp_(61) [new Agent/UDP]
+$udp_(61) set class_ 2
+set null_(61) [new Agent/Null]
+$ns attach-agent $node_(61) $udp_(61)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(61)
+$ns connect $udp_(61) $null_(61)
+} else {
+$ns attach-agent $node_(17) $null_(61)
+$ns connect $udp_(61) $null_(61)
+}
+set cbr_(61) [new Application/Traffic/CBR]
+$cbr_(61) set packetSize_ 512
+$cbr_(61) set interval_ 2.0
+$cbr_(61) attach-agent $udp_(61)
+$ns at 10.0 "$cbr_(61) start"
+
+#######################################################################
+########################################################################
+set udp_(63) [new Agent/UDP]
+$udp_(63) set class_ 2
+set null_(63) [new Agent/Null]
+$ns attach-agent $node_(63) $udp_(63)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(63)
+$ns connect $udp_(63) $null_(63)
+} else {
+$ns attach-agent $node_(17) $null_(63)
+$ns connect $udp_(63) $null_(63)
+}
+set cbr_(63) [new Application/Traffic/CBR]
+$cbr_(63) set packetSize_ 512
+$cbr_(63) set interval_ 2.0
+$cbr_(63) attach-agent $udp_(63)
+$ns at 10.0 "$cbr_(63) start"
+
+#######################################################################
+########################################################################
+set udp_(64) [new Agent/UDP]
+$udp_(64) set class_ 2
+set null_(64) [new Agent/Null]
+$ns attach-agent $node_(64) $udp_(64)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(64)
+$ns connect $udp_(64) $null_(64)
+} else {
+$ns attach-agent $node_(17) $null_(64)
+$ns connect $udp_(64) $null_(64)
+}
+set cbr_(64) [new Application/Traffic/CBR]
+$cbr_(64) set packetSize_ 512
+$cbr_(64) set interval_ 2.0
+$cbr_(64) attach-agent $udp_(64)
+$ns at 10.0 "$cbr_(64) start"
+
+#######################################################################
+########################################################################
+set udp_(65) [new Agent/UDP]
+$udp_(65) set class_ 2
+set null_(65) [new Agent/Null]
+$ns attach-agent $node_(65) $udp_(65)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(65)
+$ns connect $udp_(65) $null_(65)
+} else {
+$ns attach-agent $node_(17) $null_(65)
+$ns connect $udp_(65) $null_(65)
+}
+set cbr_(65) [new Application/Traffic/CBR]
+$cbr_(65) set packetSize_ 512
+$cbr_(65) set interval_ 2.0
+$cbr_(65) attach-agent $udp_(65)
+$ns at 10.0 "$cbr_(65) start"
+
+#######################################################################
+########################################################################
+set udp_(66) [new Agent/UDP]
+$udp_(66) set class_ 2
+set null_(66) [new Agent/Null]
+$ns attach-agent $node_(66) $udp_(66)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(66)
+$ns connect $udp_(66) $null_(66)
+} else {
+$ns attach-agent $node_(17) $null_(66)
+$ns connect $udp_(66) $null_(66)
+}
+set cbr_(66) [new Application/Traffic/CBR]
+$cbr_(66) set packetSize_ 512
+$cbr_(66) set interval_ 2.0
+$cbr_(66) attach-agent $udp_(66)
+$ns at 10.0 "$cbr_(66) start"
+
+#######################################################################
+########################################################################
+set udp_(67) [new Agent/UDP]
+$udp_(67) set class_ 2
+set null_(67) [new Agent/Null]
+$ns attach-agent $node_(67) $udp_(67)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(67)
+$ns connect $udp_(67) $null_(67)
+} else {
+$ns attach-agent $node_(17) $null_(67)
+$ns connect $udp_(67) $null_(67)
+}
+set cbr_(67) [new Application/Traffic/CBR]
+$cbr_(67) set packetSize_ 512
+$cbr_(67) set interval_ 2.0
+$cbr_(67) attach-agent $udp_(67)
+$ns at 10.0 "$cbr_(67) start"
+
+#######################################################################
+########################################################################
+set udp_(68) [new Agent/UDP]
+$udp_(68) set class_ 2
+set null_(68) [new Agent/Null]
+$ns attach-agent $node_(68) $udp_(68)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(68)
+$ns connect $udp_(68) $null_(68)
+} else {
+$ns attach-agent $node_(17) $null_(68)
+$ns connect $udp_(68) $null_(68)
+}
+set cbr_(68) [new Application/Traffic/CBR]
+$cbr_(68) set packetSize_ 512
+$cbr_(68) set interval_ 2.0
+$cbr_(68) attach-agent $udp_(68)
+$ns at 10.0 "$cbr_(68) start"
+
+#######################################################################
+########################################################################
+set udp_(69) [new Agent/UDP]
+$udp_(69) set class_ 2
+set null_(69) [new Agent/Null]
+$ns attach-agent $node_(69) $udp_(69)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(69)
+$ns connect $udp_(69) $null_(69)
+} else {
+$ns attach-agent $node_(17) $null_(69)
+$ns connect $udp_(69) $null_(69)
+}
+set cbr_(69) [new Application/Traffic/CBR]
+$cbr_(69) set packetSize_ 512
+$cbr_(69) set interval_ 2.0
+$cbr_(69) attach-agent $udp_(69)
+$ns at 10.0 "$cbr_(69) start"
+
+#######################################################################
+########################################################################
+set udp_(70) [new Agent/UDP]
+$udp_(70) set class_ 2
+set null_(70) [new Agent/Null]
+$ns attach-agent $node_(70) $udp_(70)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(70)
+$ns connect $udp_(70) $null_(70)
+} else {
+$ns attach-agent $node_(17) $null_(70)
+$ns connect $udp_(70) $null_(70)
+}
+set cbr_(70) [new Application/Traffic/CBR]
+$cbr_(70) set packetSize_ 512
+$cbr_(70) set interval_ 2.0
+$cbr_(70) attach-agent $udp_(70)
+$ns at 10.0 "$cbr_(70) start"
+
+#######################################################################
+########################################################################
+set udp_(71) [new Agent/UDP]
+$udp_(71) set class_ 2
+set null_(71) [new Agent/Null]
+$ns attach-agent $node_(71) $udp_(71)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(71)
+$ns connect $udp_(71) $null_(71)
+} else {
+$ns attach-agent $node_(17) $null_(71)
+$ns connect $udp_(71) $null_(71)
+}
+set cbr_(71) [new Application/Traffic/CBR]
+$cbr_(71) set packetSize_ 512
+$cbr_(71) set interval_ 2.0
+$cbr_(71) attach-agent $udp_(71)
+$ns at 10.0 "$cbr_(71) start"
+
+#######################################################################
+########################################################################
+set udp_(72) [new Agent/UDP]
+$udp_(72) set class_ 2
+set null_(72) [new Agent/Null]
+$ns attach-agent $node_(72) $udp_(72)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(72)
+$ns connect $udp_(72) $null_(72)
+} else {
+$ns attach-agent $node_(17) $null_(72)
+$ns connect $udp_(72) $null_(72)
+}
+set cbr_(72) [new Application/Traffic/CBR]
+$cbr_(72) set packetSize_ 512
+$cbr_(72) set interval_ 2.0
+$cbr_(72) attach-agent $udp_(72)
+$ns at 10.0 "$cbr_(72) start"
+
+#######################################################################
+########################################################################
+set udp_(73) [new Agent/UDP]
+$udp_(73) set class_ 2
+set null_(73) [new Agent/Null]
+$ns attach-agent $node_(73) $udp_(73)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(73)
+$ns connect $udp_(73) $null_(73)
+} else {
+$ns attach-agent $node_(17) $null_(73)
+$ns connect $udp_(73) $null_(73)
+}
+set cbr_(73) [new Application/Traffic/CBR]
+$cbr_(73) set packetSize_ 512
+$cbr_(73) set interval_ 2.0
+$cbr_(73) attach-agent $udp_(73)
+$ns at 10.0 "$cbr_(73) start"
+
+#######################################################################
+########################################################################
+set udp_(74) [new Agent/UDP]
+$udp_(74) set class_ 2
+set null_(74) [new Agent/Null]
+$ns attach-agent $node_(74) $udp_(74)
+$ns attach-agent $node_(62) $null_(74)
+$ns connect $udp_(74) $null_(74)
+set cbr_(74) [new Application/Traffic/CBR]
+$cbr_(74) set packetSize_ 512
+$cbr_(74) attach-agent $udp_(74)
+
+$cbr_(74) set interval_ 10		## setting the packet rate for high priority packet
+$ns at 6.0 "$cbr_(74) start"
+
+$cbr_(74) set interval_ 0.033		## setting the packet rate for high priority packet
+$ns at 10.0 "$cbr_(74) start"
+
+
+########################################################################
+set udp_(75) [new Agent/UDP]
+$udp_(75) set class_ 2
+set null_(75) [new Agent/Null]
+$ns attach-agent $node_(75) $udp_(75)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(75)
+$ns connect $udp_(75) $null_(75)
+} else {
+$ns attach-agent $node_(17) $null_(75)
+$ns connect $udp_(75) $null_(75)
+}
+set cbr_(75) [new Application/Traffic/CBR]
+$cbr_(75) set packetSize_ 512
+$cbr_(75) set interval_ 2.0
+$cbr_(75) attach-agent $udp_(75)
+$ns at 10.0 "$cbr_(75) start"
+
+#######################################################################
+########################################################################
+set udp_(76) [new Agent/UDP]
+$udp_(76) set class_ 2
+set null_(76) [new Agent/Null]
+$ns attach-agent $node_(76) $udp_(76)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(76)
+$ns connect $udp_(76) $null_(76)
+} else {
+$ns attach-agent $node_(17) $null_(76)
+$ns connect $udp_(76) $null_(76)
+}
+set cbr_(76) [new Application/Traffic/CBR]
+$cbr_(76) set packetSize_ 512
+$cbr_(76) set interval_ 2.0
+$cbr_(76) attach-agent $udp_(76)
+$ns at 10.0 "$cbr_(76) start"
+
+#######################################################################
+########################################################################
+set udp_(77) [new Agent/UDP]
+$udp_(77) set class_ 2
+set null_(77) [new Agent/Null]
+$ns attach-agent $node_(77) $udp_(77)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(77)
+$ns connect $udp_(77) $null_(77)
+} else {
+$ns attach-agent $node_(17) $null_(77)
+$ns connect $udp_(77) $null_(77)
+}
+set cbr_(77) [new Application/Traffic/CBR]
+$cbr_(77) set packetSize_ 512
+$cbr_(77) set interval_ 2.0
+$cbr_(77) attach-agent $udp_(77)
+$ns at 10.0 "$cbr_(77) start"
+
+#######################################################################
+########################################################################
+set udp_(78) [new Agent/UDP]
+$udp_(78) set class_ 2
+set null_(78) [new Agent/Null]
+$ns attach-agent $node_(78) $udp_(78)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(78)
+$ns connect $udp_(78) $null_(78)
+} else {
+$ns attach-agent $node_(17) $null_(78)
+$ns connect $udp_(78) $null_(78)
+}
+set cbr_(78) [new Application/Traffic/CBR]
+$cbr_(78) set packetSize_ 512
+$cbr_(78) set interval_ 2.0
+$cbr_(78) attach-agent $udp_(78)
+$ns at 10.0 "$cbr_(78) start"
+
+#######################################################################
+########################################################################
+set udp_(79) [new Agent/UDP]
+$udp_(79) set class_ 2
+set null_(79) [new Agent/Null]
+$ns attach-agent $node_(79) $udp_(79)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(79)
+$ns connect $udp_(79) $null_(79)
+} else {
+$ns attach-agent $node_(17) $null_(79)
+$ns connect $udp_(79) $null_(79)
+}
+set cbr_(79) [new Application/Traffic/CBR]
+$cbr_(79) set packetSize_ 512
+$cbr_(79) set interval_ 2.0
+$cbr_(79) attach-agent $udp_(79)
+$ns at 10.0 "$cbr_(79) start"
+
+#######################################################################
+########################################################################
+set udp_(80) [new Agent/UDP]
+$udp_(80) set class_ 2
+set null_(80) [new Agent/Null]
+$ns attach-agent $node_(80) $udp_(80)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(80)
+$ns connect $udp_(80) $null_(80)
+} else {
+$ns attach-agent $node_(17) $null_(80)
+$ns connect $udp_(80) $null_(80)
+}
+set cbr_(80) [new Application/Traffic/CBR]
+$cbr_(80) set packetSize_ 512
+$cbr_(80) set interval_ 2.0
+$cbr_(80) attach-agent $udp_(80)
+$ns at 10.0 "$cbr_(80) start"
+
+#######################################################################
+########################################################################
+set udp_(81) [new Agent/UDP]
+$udp_(81) set class_ 2
+set null_(81) [new Agent/Null]
+$ns attach-agent $node_(81) $udp_(81)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(81)
+$ns connect $udp_(81) $null_(81)
+} else {
+$ns attach-agent $node_(17) $null_(81)
+$ns connect $udp_(81) $null_(81)
+}
+set cbr_(81) [new Application/Traffic/CBR]
+$cbr_(81) set packetSize_ 512
+$cbr_(81) set interval_ 2.0
+$cbr_(81) attach-agent $udp_(81)
+$ns at 10.0 "$cbr_(81) start"
+
+#######################################################################
+########################################################################
+set udp_(82) [new Agent/UDP]
+$udp_(82) set class_ 2
+set null_(82) [new Agent/Null]
+$ns attach-agent $node_(82) $udp_(82)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(82)
+$ns connect $udp_(82) $null_(82)
+} else {
+$ns attach-agent $node_(17) $null_(82)
+$ns connect $udp_(82) $null_(82)
+}
+set cbr_(82) [new Application/Traffic/CBR]
+$cbr_(82) set packetSize_ 512
+$cbr_(82) set interval_ 2.0
+$cbr_(82) attach-agent $udp_(82)
+$ns at 10.0 "$cbr_(82) start"
+
+#######################################################################
+########################################################################
+set udp_(83) [new Agent/UDP]
+$udp_(83) set class_ 2
+set null_(83) [new Agent/Null]
+$ns attach-agent $node_(83) $udp_(83)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(83)
+$ns connect $udp_(83) $null_(83)
+} else {
+$ns attach-agent $node_(17) $null_(83)
+$ns connect $udp_(83) $null_(83)
+}
+set cbr_(83) [new Application/Traffic/CBR]
+$cbr_(83) set packetSize_ 512
+$cbr_(83) set interval_ 2.0
+$cbr_(83) attach-agent $udp_(83)
+$ns at 10.0 "$cbr_(83) start"
+
+#######################################################################
+########################################################################
+set udp_(84) [new Agent/UDP]
+$udp_(84) set class_ 2
+set null_(84) [new Agent/Null]
+$ns attach-agent $node_(84) $udp_(84)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(84)
+$ns connect $udp_(84) $null_(84)
+} else {
+$ns attach-agent $node_(17) $null_(84)
+$ns connect $udp_(84) $null_(84)
+}
+set cbr_(84) [new Application/Traffic/CBR]
+$cbr_(84) set packetSize_ 512
+$cbr_(84) set interval_ 2.0
+$cbr_(84) attach-agent $udp_(84)
+$ns at 10.0 "$cbr_(84) start"
+
+#######################################################################
+########################################################################
+set udp_(85) [new Agent/UDP]
+$udp_(85) set class_ 2
+set null_(85) [new Agent/Null]
+$ns attach-agent $node_(85) $udp_(85)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(85)
+$ns connect $udp_(85) $null_(85)
+} else {
+$ns attach-agent $node_(17) $null_(85)
+$ns connect $udp_(85) $null_(85)
+}
+set cbr_(85) [new Application/Traffic/CBR]
+$cbr_(85) set packetSize_ 512
+$cbr_(85) set interval_ 2.0
+$cbr_(85) attach-agent $udp_(85)
+$ns at 10.0 "$cbr_(85) start"
+
+#######################################################################
+########################################################################
+set udp_(86) [new Agent/UDP]
+$udp_(86) set class_ 2
+set null_(86) [new Agent/Null]
+$ns attach-agent $node_(86) $udp_(86)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(86)
+$ns connect $udp_(86) $null_(86)
+} else {
+$ns attach-agent $node_(17) $null_(86)
+$ns connect $udp_(86) $null_(86)
+}
+set cbr_(86) [new Application/Traffic/CBR]
+$cbr_(86) set packetSize_ 512
+$cbr_(86) set interval_ 2.0
+$cbr_(86) attach-agent $udp_(86)
+$ns at 10.0 "$cbr_(86) start"
+
+#######################################################################
+########################################################################
+set udp_(87) [new Agent/UDP]
+$udp_(87) set class_ 2
+set null_(87) [new Agent/Null]
+$ns attach-agent $node_(87) $udp_(87)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(87)
+$ns connect $udp_(87) $null_(87)
+} else {
+$ns attach-agent $node_(17) $null_(87)
+$ns connect $udp_(87) $null_(87)
+}
+set cbr_(87) [new Application/Traffic/CBR]
+$cbr_(87) set packetSize_ 512
+$cbr_(87) set interval_ 2.0
+$cbr_(87) attach-agent $udp_(87)
+$ns at 10.0 "$cbr_(87) start"
+
+#######################################################################
+########################################################################
+set udp_(88) [new Agent/UDP]
+$udp_(88) set class_ 2
+set null_(88) [new Agent/Null]
+$ns attach-agent $node_(88) $udp_(88)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(88)
+$ns connect $udp_(88) $null_(88)
+} else {
+$ns attach-agent $node_(17) $null_(88)
+$ns connect $udp_(88) $null_(88)
+}
+set cbr_(88) [new Application/Traffic/CBR]
+$cbr_(88) set packetSize_ 512
+$cbr_(88) set interval_ 2.0
+$cbr_(88) attach-agent $udp_(88)
+$ns at 10.0 "$cbr_(88) start"
+
+#######################################################################
+########################################################################
+set udp_(89) [new Agent/UDP]
+$udp_(89) set class_ 2
+set null_(89) [new Agent/Null]
+$ns attach-agent $node_(89) $udp_(89)
+$ns attach-agent $node_(62) $null_(89)
+$ns connect $udp_(89) $null_(89)
+set cbr_(89) [new Application/Traffic/CBR]
+$cbr_(89) set packetSize_ 512
+
+$cbr_(89) attach-agent $udp_(89)
+
+$cbr_(89) set interval_ 10
+$ns at 6.0 "$cbr_(89) start"
+
+
+$cbr_(89) set interval_ 0.033			## setting the packet rate for high priority packet
+$ns at 10.0 "$cbr_(89) start"
+
+#######################################################################
+########################################################################
+set udp_(90) [new Agent/UDP]
+$udp_(90) set class_ 2
+set null_(90) [new Agent/Null]
+$ns attach-agent $node_(90) $udp_(90)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(90)
+$ns connect $udp_(90) $null_(90)
+} else {
+$ns attach-agent $node_(17) $null_(90)
+$ns connect $udp_(90) $null_(90)
+}
+set cbr_(90) [new Application/Traffic/CBR]
+$cbr_(90) set packetSize_ 512
+$cbr_(90) set interval_ 2.0
+$cbr_(90) attach-agent $udp_(90)
+$ns at 10.0 "$cbr_(90) start"
+
+#######################################################################
+########################################################################
+set udp_(91) [new Agent/UDP]
+$udp_(91) set class_ 2
+set null_(91) [new Agent/Null]
+$ns attach-agent $node_(91) $udp_(91)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(91)
+$ns connect $udp_(91) $null_(91)
+} else {
+$ns attach-agent $node_(17) $null_(91)
+$ns connect $udp_(91) $null_(91)
+}
+set cbr_(91) [new Application/Traffic/CBR]
+$cbr_(91) set packetSize_ 512
+$cbr_(91) set interval_ 2.0
+$cbr_(91) attach-agent $udp_(91)
+$ns at 10.0 "$cbr_(91) start"
+
+#######################################################################
+########################################################################
+set udp_(93) [new Agent/UDP]
+$udp_(93) set class_ 2
+set null_(93) [new Agent/Null]
+$ns attach-agent $node_(93) $udp_(93)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(93)
+$ns connect $udp_(93) $null_(93)
+} else {
+$ns attach-agent $node_(17) $null_(93)
+$ns connect $udp_(93) $null_(93)
+}
+set cbr_(93) [new Application/Traffic/CBR]
+$cbr_(93) set packetSize_ 512
+$cbr_(93) set interval_ 2.0
+$cbr_(93) attach-agent $udp_(93)
+$ns at 10.0 "$cbr_(93) start"
+
+#######################################################################
+########################################################################
+set udp_(94) [new Agent/UDP]
+$udp_(94) set class_ 2
+set null_(94) [new Agent/Null]
+$ns attach-agent $node_(94) $udp_(94)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(94)
+$ns connect $udp_(94) $null_(94)
+} else {
+$ns attach-agent $node_(17) $null_(94)
+$ns connect $udp_(94) $null_(94)
+}
+set cbr_(94) [new Application/Traffic/CBR]
+$cbr_(94) set packetSize_ 512
+$cbr_(94) set interval_ 2.0
+$cbr_(94) attach-agent $udp_(94)
+$ns at 10.0 "$cbr_(94) start"
+
+#######################################################################
+########################################################################
+set udp_(95) [new Agent/UDP]
+$udp_(95) set class_ 2
+set null_(95) [new Agent/Null]
+$ns attach-agent $node_(95) $udp_(95)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(95)
+$ns connect $udp_(95) $null_(95)
+} else {
+$ns attach-agent $node_(17) $null_(95)
+$ns connect $udp_(95) $null_(95)
+}
+set cbr_(95) [new Application/Traffic/CBR]
+$cbr_(95) set packetSize_ 512
+$cbr_(95) set interval_ 2.0
+$cbr_(95) attach-agent $udp_(95)
+$ns at 10.0 "$cbr_(95) start"
+
+#######################################################################
+########################################################################
+set udp_(96) [new Agent/UDP]
+$udp_(96) set class_ 2
+set null_(96) [new Agent/Null]
+$ns attach-agent $node_(96) $udp_(96)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(96)
+$ns connect $udp_(96) $null_(96)
+} else {
+$ns attach-agent $node_(17) $null_(96)
+$ns connect $udp_(96) $null_(96)
+}
+set cbr_(96) [new Application/Traffic/CBR]
+$cbr_(96) set packetSize_ 512
+$cbr_(96) set interval_ 2.0
+$cbr_(96) attach-agent $udp_(96)
+$ns at 10.0 "$cbr_(96) start"
+
+#######################################################################
+########################################################################
+set udp_(97) [new Agent/UDP]
+$udp_(97) set class_ 2
+set null_(97) [new Agent/Null]
+$ns attach-agent $node_(97) $udp_(97)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(97)
+$ns connect $udp_(97) $null_(97)
+} else {
+$ns attach-agent $node_(17) $null_(97)
+$ns connect $udp_(97) $null_(97)
+}
+set cbr_(97) [new Application/Traffic/CBR]
+$cbr_(97) set packetSize_ 512
+$cbr_(97) set interval_ 2.0
+$cbr_(97) attach-agent $udp_(97)
+$ns at 10.0 "$cbr_(97) start"
+
+#######################################################################
+########################################################################
+set udp_(98) [new Agent/UDP]
+$udp_(98) set class_ 2
+set null_(98) [new Agent/Null]
+$ns attach-agent $node_(98) $udp_(98)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(98)
+$ns connect $udp_(98) $null_(98)
+} else {
+$ns attach-agent $node_(17) $null_(98)
+$ns connect $udp_(98) $null_(98)
+}
+set cbr_(98) [new Application/Traffic/CBR]
+$cbr_(98) set packetSize_ 512
+$cbr_(98) set interval_ 2.0
+$cbr_(98) attach-agent $udp_(98)
+$ns at 10.0 "$cbr_(98) start"
+
+#######################################################################
+########################################################################
+set udp_(99) [new Agent/UDP]
+$udp_(99) set class_ 2
+set null_(99) [new Agent/Null]
+$ns attach-agent $node_(99) $udp_(99)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(99)
+$ns connect $udp_(99) $null_(99)
+} else {
+$ns attach-agent $node_(17) $null_(99)
+$ns connect $udp_(99) $null_(99)
+}
+set cbr_(99) [new Application/Traffic/CBR]
+$cbr_(99) set packetSize_ 512
+$cbr_(99) set interval_ 2.0
+$cbr_(99) attach-agent $udp_(99)
+$ns at 10.0 "$cbr_(99) start"
+
+#######################################################################
+########################################################################
+set udp_(100) [new Agent/UDP]
+$udp_(100) set class_ 2
+set null_(100) [new Agent/Null]
+$ns attach-agent $node_(100) $udp_(100)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(100)
+$ns connect $udp_(100) $null_(100)
+} else {
+$ns attach-agent $node_(17) $null_(100)
+$ns connect $udp_(100) $null_(100)
+}
+set cbr_(100) [new Application/Traffic/CBR]
+$cbr_(100) set packetSize_ 512
+$cbr_(100) set interval_ 2.0
+$cbr_(100) attach-agent $udp_(100)
+$ns at 10.0 "$cbr_(100) start"
+
+#######################################################################
+########################################################################
+set udp_(101) [new Agent/UDP]
+$udp_(101) set class_ 2
+set null_(101) [new Agent/Null]
+$ns attach-agent $node_(101) $udp_(101)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(101)
+$ns connect $udp_(101) $null_(101)
+} else {
+$ns attach-agent $node_(17) $null_(101)
+$ns connect $udp_(101) $null_(101)
+}
+set cbr_(101) [new Application/Traffic/CBR]
+$cbr_(101) set packetSize_ 512
+$cbr_(101) set interval_ 2.0
+$cbr_(101) attach-agent $udp_(101)
+$ns at 10.0 "$cbr_(101) start"
+
+#######################################################################
+########################################################################
+set udp_(102) [new Agent/UDP]
+$udp_(102) set class_ 2
+set null_(102) [new Agent/Null]
+$ns attach-agent $node_(102) $udp_(102)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(102)
+$ns connect $udp_(102) $null_(102)
+} else {
+$ns attach-agent $node_(17) $null_(102)
+$ns connect $udp_(102) $null_(102)
+}
+set cbr_(102) [new Application/Traffic/CBR]
+$cbr_(102) set packetSize_ 512
+$cbr_(102) set interval_ 2.0
+$cbr_(102) attach-agent $udp_(102)
+$ns at 10.0 "$cbr_(102) start"
+
+#######################################################################
+########################################################################
+set udp_(103) [new Agent/UDP]
+$udp_(103) set class_ 2
+set null_(103) [new Agent/Null]
+$ns attach-agent $node_(103) $udp_(103)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(103)
+$ns connect $udp_(103) $null_(103)
+} else {
+$ns attach-agent $node_(17) $null_(103)
+$ns connect $udp_(103) $null_(103)
+}
+set cbr_(103) [new Application/Traffic/CBR]
+$cbr_(103) set packetSize_ 512
+$cbr_(103) set interval_ 2.0
+$cbr_(103) attach-agent $udp_(103)
+$ns at 10.0 "$cbr_(103) start"
+
+#######################################################################
+########################################################################
+set udp_(104) [new Agent/UDP]
+$udp_(104) set class_ 2
+set null_(104) [new Agent/Null]
+$ns attach-agent $node_(104) $udp_(104)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(104)
+$ns connect $udp_(104) $null_(104)
+} else {
+$ns attach-agent $node_(17) $null_(104)
+$ns connect $udp_(104) $null_(104)
+}
+set cbr_(104) [new Application/Traffic/CBR]
+$cbr_(104) set packetSize_ 512
+$cbr_(104) set interval_ 2.0
+$cbr_(104) attach-agent $udp_(104)
+$ns at 10.0 "$cbr_(104) start"
+
+#######################################################################
+########################################################################
+set udp_(105) [new Agent/UDP]
+$udp_(105) set class_ 2
+set null_(105) [new Agent/Null]
+$ns attach-agent $node_(105) $udp_(105)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(105)
+$ns connect $udp_(105) $null_(105)
+} else {
+$ns attach-agent $node_(17) $null_(105)
+$ns connect $udp_(105) $null_(105)
+}
+set cbr_(105) [new Application/Traffic/CBR]
+$cbr_(105) set packetSize_ 512
+$cbr_(105) set interval_ 2.0
+$cbr_(105) attach-agent $udp_(105)
+$ns at 10.0 "$cbr_(105) start"
+
+#######################################################################
+########################################################################
+set udp_(106) [new Agent/UDP]
+$udp_(106) set class_ 2
+set null_(106) [new Agent/Null]
+$ns attach-agent $node_(106) $udp_(106)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(106)
+$ns connect $udp_(106) $null_(106)
+} else {
+$ns attach-agent $node_(17) $null_(106)
+$ns connect $udp_(106) $null_(106)
+}
+set cbr_(106) [new Application/Traffic/CBR]
+$cbr_(106) set packetSize_ 512
+$cbr_(106) set interval_ 2.0
+$cbr_(106) attach-agent $udp_(106)
+$ns at 10.0 "$cbr_(106) start"
+
+#######################################################################
+########################################################################
+set udp_(107) [new Agent/UDP]
+$udp_(107) set class_ 2
+set null_(107) [new Agent/Null]
+$ns attach-agent $node_(107) $udp_(107)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(107)
+$ns connect $udp_(107) $null_(107)
+} else {
+$ns attach-agent $node_(17) $null_(107)
+$ns connect $udp_(107) $null_(107)
+}
+set cbr_(107) [new Application/Traffic/CBR]
+$cbr_(107) set packetSize_ 512
+$cbr_(107) set interval_ 2.0
+$cbr_(107) attach-agent $udp_(107)
+$ns at 10.0 "$cbr_(107) start"
+
+#######################################################################
+########################################################################
+set udp_(108) [new Agent/UDP]
+$udp_(108) set class_ 2
+set null_(108) [new Agent/Null]
+$ns attach-agent $node_(108) $udp_(108)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(108)
+$ns connect $udp_(108) $null_(108)
+} else {
+$ns attach-agent $node_(17) $null_(108)
+$ns connect $udp_(108) $null_(108)
+}
+set cbr_(108) [new Application/Traffic/CBR]
+$cbr_(108) set packetSize_ 512
+$cbr_(108) set interval_ 2.0
+$cbr_(108) attach-agent $udp_(108)
+$ns at 10.0 "$cbr_(108) start"
+
+#######################################################################
+########################################################################
+set udp_(109) [new Agent/UDP]
+$udp_(109) set class_ 2
+set null_(109) [new Agent/Null]
+$ns attach-agent $node_(109) $udp_(109)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(109)
+$ns connect $udp_(109) $null_(109)
+} else {
+$ns attach-agent $node_(17) $null_(109)
+$ns connect $udp_(109) $null_(109)
+}
+set cbr_(109) [new Application/Traffic/CBR]
+$cbr_(109) set packetSize_ 512
+$cbr_(109) set interval_ 2.0
+$cbr_(109) attach-agent $udp_(109)
+$ns at 10.0 "$cbr_(109) start"
+
+#######################################################################
+########################################################################
+set udp_(110) [new Agent/UDP]
+$udp_(110) set class_ 2
+set null_(110) [new Agent/Null]
+$ns attach-agent $node_(110) $udp_(110)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(110)
+$ns connect $udp_(110) $null_(110)
+} else {
+$ns attach-agent $node_(17) $null_(110)
+$ns connect $udp_(110) $null_(110)
+}
+set cbr_(110) [new Application/Traffic/CBR]
+$cbr_(110) set packetSize_ 512
+$cbr_(110) set interval_ 2.0
+$cbr_(110) attach-agent $udp_(110)
+$ns at 10.0 "$cbr_(110) start"
+
+#######################################################################
+########################################################################
+set udp_(111) [new Agent/UDP]
+$udp_(111) set class_ 2
+set null_(111) [new Agent/Null]
+$ns attach-agent $node_(111) $udp_(111)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(111)
+$ns connect $udp_(111) $null_(111)
+} else {
+$ns attach-agent $node_(17) $null_(111)
+$ns connect $udp_(111) $null_(111)
+}
+set cbr_(111) [new Application/Traffic/CBR]
+$cbr_(111) set packetSize_ 512
+$cbr_(111) set interval_ 2.0
+$cbr_(111) attach-agent $udp_(111)
+$ns at 10.0 "$cbr_(111) start"
+
+#######################################################################
+########################################################################
+set udp_(112) [new Agent/UDP]
+$udp_(112) set class_ 2
+set null_(112) [new Agent/Null]
+$ns attach-agent $node_(112) $udp_(112)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(112)
+$ns connect $udp_(112) $null_(112)
+} else {
+$ns attach-agent $node_(17) $null_(112)
+$ns connect $udp_(112) $null_(112)
+}
+set cbr_(112) [new Application/Traffic/CBR]
+$cbr_(112) set packetSize_ 512
+$cbr_(112) set interval_ 2.0
+$cbr_(112) attach-agent $udp_(112)
+$ns at 10.0 "$cbr_(112) start"
+
+#######################################################################
+########################################################################
+set udp_(113) [new Agent/UDP]
+$udp_(113) set class_ 2
+set null_(113) [new Agent/Null]
+$ns attach-agent $node_(113) $udp_(113)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(113)
+$ns connect $udp_(113) $null_(113)
+} else {
+$ns attach-agent $node_(17) $null_(113)
+$ns connect $udp_(113) $null_(113)
+}
+set cbr_(113) [new Application/Traffic/CBR]
+$cbr_(113) set packetSize_ 512
+$cbr_(113) set interval_ 2.0
+$cbr_(113) attach-agent $udp_(113)
+$ns at 10.0 "$cbr_(113) start"
+
+#######################################################################
+########################################################################
+set udp_(114) [new Agent/UDP]
+$udp_(114) set class_ 2
+set null_(114) [new Agent/Null]
+$ns attach-agent $node_(114) $udp_(114)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(114)
+$ns connect $udp_(114) $null_(114)
+} else {
+$ns attach-agent $node_(17) $null_(114)
+$ns connect $udp_(114) $null_(114)
+}
+set cbr_(114) [new Application/Traffic/CBR]
+$cbr_(114) set packetSize_ 512
+$cbr_(114) set interval_ 2.0
+$cbr_(114) attach-agent $udp_(114)
+$ns at 10.0 "$cbr_(114) start"
+
+#######################################################################
+########################################################################
+set udp_(115) [new Agent/UDP]
+$udp_(115) set class_ 2
+set null_(115) [new Agent/Null]
+$ns attach-agent $node_(115) $udp_(115)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(115)
+$ns connect $udp_(115) $null_(115)
+} else {
+$ns attach-agent $node_(17) $null_(115)
+$ns connect $udp_(115) $null_(115)
+}
+set cbr_(115) [new Application/Traffic/CBR]
+$cbr_(115) set packetSize_ 512
+$cbr_(115) set interval_ 2.0
+$cbr_(115) attach-agent $udp_(115)
+$ns at 10.0 "$cbr_(115) start"
+
+#######################################################################
+########################################################################
+set udp_(116) [new Agent/UDP]
+$udp_(116) set class_ 2
+set null_(116) [new Agent/Null]
+$ns attach-agent $node_(116) $udp_(116)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(116)
+$ns connect $udp_(116) $null_(116)
+} else {
+$ns attach-agent $node_(17) $null_(116)
+$ns connect $udp_(116) $null_(116)
+}
+set cbr_(116) [new Application/Traffic/CBR]
+$cbr_(116) set packetSize_ 512
+$cbr_(116) set interval_ 2.0
+$cbr_(116) attach-agent $udp_(116)
+$ns at 10.0 "$cbr_(116) start"
+
+#######################################################################
+########################################################################
+set udp_(117) [new Agent/UDP]
+$udp_(117) set class_ 2
+set null_(117) [new Agent/Null]
+$ns attach-agent $node_(117) $udp_(117)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(117)
+$ns connect $udp_(117) $null_(117)
+} else {
+$ns attach-agent $node_(17) $null_(117)
+$ns connect $udp_(117) $null_(117)
+}
+set cbr_(117) [new Application/Traffic/CBR]
+$cbr_(117) set packetSize_ 512
+$cbr_(117) set interval_ 2.0
+$cbr_(117) attach-agent $udp_(117)
+$ns at 10.0 "$cbr_(117) start"
+
+#######################################################################
+########################################################################
+set udp_(118) [new Agent/UDP]
+$udp_(118) set class_ 2
+set null_(118) [new Agent/Null]
+$ns attach-agent $node_(118) $udp_(118)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(118)
+$ns connect $udp_(118) $null_(118)
+} else {
+$ns attach-agent $node_(17) $null_(118)
+$ns connect $udp_(118) $null_(118)
+}
+set cbr_(118) [new Application/Traffic/CBR]
+$cbr_(118) set packetSize_ 512
+$cbr_(118) set interval_ 2.0
+$cbr_(118) attach-agent $udp_(118)
+$ns at 10.0 "$cbr_(118) start"
+
+#######################################################################
+########################################################################
+set udp_(119) [new Agent/UDP]
+$udp_(119) set class_ 2
+set null_(119) [new Agent/Null]
+$ns attach-agent $node_(119) $udp_(119)
+set a [expr rand()]
+#puts $a
+if { [expr {$a >= 0.5}]} {
+$ns attach-agent $node_(92) $null_(119)
+$ns connect $udp_(119) $null_(119)
+} else {
+$ns attach-agent $node_(17) $null_(119)
+$ns connect $udp_(119) $null_(119)
+}
+set cbr_(119) [new Application/Traffic/CBR]
+$cbr_(119) set packetSize_ 512
+$cbr_(119) set interval_ 2.0
+$cbr_(119) attach-agent $udp_(119)
+$ns at 10.0 "$cbr_(119) start"
+
+
+
+#$node_(2) set priority 1
+#$node_(3) set priority 1
+#$node_(4) set priority 1
+#$node_(5) set priority 1
+
+
+
+#set udp_(62) [new Agent/UDP]
+#$ns attach-agent $node_(62) $udp_(62)
+#$ns at 5.0 "$udp_(62) start"
+
+
+
+#######################################################################
+########################################################################
+
